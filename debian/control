@@ -1,0 +1,10 @@
+Source: status-area-orientationlock-applet
+Section: libs
+Priority: optional
+Maintainer: Mohammad Abu-Garbeyyeh <mohammad7410@gmail.com>
+Build-Depends: debhelper (>= 5), libgtk2.0-dev, libglib2.0-dev, libhildon1-dev, libhildondesktop1-dev
+
+Package: status-area-orientationlock-applet
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, hildon-desktop (>= 1:2.2.142-11)
+Description: Hildon Status Menu plugin to control orientation lock.

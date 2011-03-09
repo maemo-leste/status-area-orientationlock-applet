@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Orientation lock 
+Comment=Orientation lock applet
+Category=permanent
+Type=default
+X-Path=lib-orientationlock-status-menu.so
