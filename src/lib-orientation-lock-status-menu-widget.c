@@ -20,6 +20,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <libintl.h>
 #include <gtk/gtk.h>
 #include <hildon/hildon.h>
 #include <gconf/gconf-client.h>
@@ -61,7 +62,7 @@ orientation_lock_status_plugin_on_button_clicked (GtkWidget *button, Orientation
 
     // Update button text and status bar icon
     if (gconf_client_get_bool (priv->gconf_client, GCONF_KEY_ORIENTATION_LOCK, NULL)) {
-        hildon_button_set_value (HILDON_BUTTON (priv->button), _("Landscape orientation locked"));
+        hildon_button_set_value (HILDON_BUTTON (priv->button), dgettext ("status-area-orientationlock-applet", "Landscape orientation locked"));
         GtkIconTheme *icon_theme = gtk_icon_theme_get_default ();
         GdkPixbuf *pixbuf = gtk_icon_theme_load_icon (icon_theme, "orientation-lock.landscape",
                             18, GTK_ICON_LOOKUP_NO_SVG, NULL);
@@ -70,7 +71,7 @@ orientation_lock_status_plugin_on_button_clicked (GtkWidget *button, Orientation
         hildon_button_set_image (HILDON_BUTTON (priv->button),
                                  gtk_image_new_from_icon_name ("orientation-lock-icon.landscape", GTK_ICON_SIZE_DIALOG));
     } else {
-        hildon_button_set_value (HILDON_BUTTON (priv->button), _("Auto-orientation enabled"));
+        hildon_button_set_value (HILDON_BUTTON (priv->button), dgettext ("status-area-orientationlock-applet", "Auto-orientation enabled"));
         hd_status_plugin_item_set_status_area_icon (HD_STATUS_PLUGIN_ITEM (plugin), NULL);
         hildon_button_set_image (HILDON_BUTTON (priv->button),
                                  gtk_image_new_from_icon_name ("orientation-lock-icon.auto", GTK_ICON_SIZE_DIALOG));
@@ -92,7 +93,7 @@ orientation_lock_status_plugin_init (OrientationLockStatusPlugin *plugin)
     plugin->priv->button = hildon_button_new (HILDON_SIZE_FINGER_HEIGHT | HILDON_SIZE_AUTO_WIDTH, HILDON_BUTTON_ARRANGEMENT_VERTICAL);
     hildon_button_set_style (HILDON_BUTTON (plugin->priv->button), HILDON_BUTTON_STYLE_PICKER);
     if (gconf_client_get_bool (plugin->priv->gconf_client, GCONF_KEY_ORIENTATION_LOCK, NULL)) {
-        hildon_button_set_value (HILDON_BUTTON (plugin->priv->button), _("Landscape orientation locked"));
+        hildon_button_set_value (HILDON_BUTTON (plugin->priv->button), dgettext ("status-area-orientationlock-applet", "Landscape orientation locked"));
 
         GtkIconTheme *icon_theme = gtk_icon_theme_get_default ();
         GdkPixbuf *pixbuf = gtk_icon_theme_load_icon (icon_theme, "orientation-lock.landscape",
@@ -103,11 +104,11 @@ orientation_lock_status_plugin_init (OrientationLockStatusPlugin *plugin)
         hildon_button_set_image (HILDON_BUTTON (plugin->priv->button),
                                  gtk_image_new_from_icon_name ("orientation-lock-icon.landscape", GTK_ICON_SIZE_DIALOG));
     } else {
-        hildon_button_set_value (HILDON_BUTTON (plugin->priv->button), _("Auto-orientation enabled"));
+        hildon_button_set_value (HILDON_BUTTON (plugin->priv->button), dgettext ("status-area-orientationlock-applet", "Auto-orientation enabled"));
         hildon_button_set_image (HILDON_BUTTON (plugin->priv->button),
                                  gtk_image_new_from_icon_name ("orientation-lock-icon.auto", GTK_ICON_SIZE_DIALOG));
     }
-    hildon_button_set_title (HILDON_BUTTON (plugin->priv->button), _("Orientation lock"));
+    hildon_button_set_title (HILDON_BUTTON (plugin->priv->button), dgettext ("status-area-orientationlock-applet", "Orientation lock"));
     gtk_button_set_alignment (GTK_BUTTON (plugin->priv->button), 0, 0);
 
     g_signal_connect (plugin->priv->button, "clicked", G_CALLBACK (orientation_lock_status_plugin_on_button_clicked), plugin);
