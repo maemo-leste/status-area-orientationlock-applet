@@ -17,9 +17,9 @@ MSGFMT = /scratchbox/tools/bin/msgfmt
 XGETTEXT = /scratchbox/tools/bin/xgettext
 MSGMERGE = /scratchbox/tools/bin/msgmerge 
 
-PO_LINGUAS= de_DE en_GB en_US pl_PL fi_FI
+PO_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR
 
-USE_LINGUAS= de_DE en_GB en_US pl_PL fi_FI
+USE_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR
 
 POFILES=$(shell LINGUAS="$(PO_LINGUAS)"; for lang in $$LINGUAS; do printf "$$lang.po "; done)
 
