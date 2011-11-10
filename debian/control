@@ -1,5 +1,5 @@
 Source: status-area-orientationlock-applet
-Section: libs
+Section: user/desktop
 Priority: optional
 Maintainer: Mohammad Abu-Garbeyyeh <mohammad7410@gmail.com>
 Build-Depends: debhelper (>= 5), libgtk2.0-dev, libglib2.0-dev, libhildon1-dev, libhildondesktop1-dev, gettext
@@ -8,3 +8,38 @@ Package: status-area-orientationlock-applet
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, hildon-desktop (>= 1:2.2.142-11)
 Description: Hildon Status Menu plugin to control orientation lock.
+XSBC-Maemo-Display-Name: Orientation Lock Applet
+XB-Maemo-Icon-26:
+ iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c
+ 6QAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0
+ SU1FB9sCGhMzOURHUsYAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJ
+ TVBXgQ4XAAAFH0lEQVRo3u2aS28bVRiGn+NxfGmT1IMLTtJUTgsOUlsqWi5C
+ VFUiVekGqSABQoItYsmGZX9A/wMrFqwAoSogUcXKokK0KRIl0EWt1E0vuTSJ
+ 4saJOzeP7cMiJ8WJHcd3B4lPsmzP5cz7znc573dm4D9uotEBpJQh4DgQABaA
+ J0KIbLsIeJswRhQYVQQywDXgXtH+Fy5cuDB86dKlCKA1erFIJJILh8N/j42N
+ PWwWAQCP+vQA4SICwVAodEzX9dPj4+M4jkOhUGjoQn19fYyNjfVNTEz8dPHi
+ xSfeOsNGAEeACNAHbABd6g6/LaXsEkL8CohAIHA4k8lw5/4cRjhGz9p9PPZG
+ 3QSWlpbo7e1leHh4AKiegJTSA5wCTgKDKmTK2SFA37lxJdAPX/5M4OuP8D+4
+ WTcB27bJZrPV54ACfgY4p8BtWQp4qO7+YeAVIAjMAjdKBno8DVdGyW88aixp
+ vd7qk1hKeQj4GOhXm1aB34F7QogNdcx7wGtqvwXcEEKslgxmrkPiOhlN40Ak
+ UjeBoaGh6ghIKY8AnwAHgXUgDiSEEHLHocNbpwCPlWfKWjgcJhwO09PTQzAY
+ rBn82toag4ODexOQUh4GPgP8wH3gRyGEvcu414E3gRngtiqle8ZxPQSqmgdU
+ zH+gwM8A3wshdq19QojbCnjV5rou2WwWn8/XlPq9015XMZ8GrlYC34gZhlF3
+ FdqVgKrv59TfSSGE0yoJ4LouruvWfF4ikajogQEgpJL2bqt1jGVZNZ+TTqcr
+ EjimvmfKVJumm23b5PP5xnJASnlWSvm5lPIs8OK/0SQ/lVKel1IebCWJenOh
+ 2AMjKmlHlBhDSYXjwFtAd6u90IjA86hSifruKpqUbGBeza77LheKCVwHvgWc
+ ohA6ohL5WjUTU6NmmmbdXvAIIZ4BJnC6yAMAvUKIjXYks5SypL7XOpFZKlxk
+ UQj92c7e1jTNhqREcSsYVmrzUTsJFAoFLMuqWSN5lZ6RExMTZzRNG1Xbz01O
+ TjajwnTNzc1FNU07NDIygs/no6uriwq6aps+SiaTM1NTUzN7EojH4+8nk8mr
+ t27d2tbtdNJ8Ph+xWIyBgYFvFhcXb1YkkEqlvorH40xPT2PbNl6vl6GhoW3a
+ 27ZtEolEyVTeKgsEAqRSKVzXPQ9UJrC8vHxgaWnpeSXI5XIkk0lSqVSJi3Vd
+ bxnoTCZDLpfDsixWV1cRQnD06FGv4zh+v9/v1Lwu1Eqw5ezp06esrKzUpI+8
+ nY71QqGAbduYpkk6na5Z3Hk7CdyyLEzTRMr658q2E8jn8xiGgeM4DQFvO4Et
+ 4PVKho4RyGazGIZRV/vYUQKO42CaZsPA9wqzphOwLAvDMBpehS4mUGksb7Mq
+ ylYpbBbwnd7cTeR5GwXejFJYjVdDoVDzCLSqoux2kxYWFjBNs6ySrYmA67pY
+ ltUW4Du7tZWVFSJlVrWrItDqUlit18s1PN69Ys+27Y4C37mGpOv6tqZnG4FC
+ oBe3/yT5B3+QWZ6ju7u746A1TSMajT5/MnPixAlisRj5fH5xGwGPx0NGfxnj
+ ix/gyigsPizpB1pt5TytaVquv78/FQwGbRVK+fn5+buXL19+UkzA8fv9HJy/
+ h3FldPN51man1rE7r+s60WiUQqGwPjU19QvwbItnSQ6Mj4/f1HX93TOvKj7R
+ d9gvNjs7+xubq4RlE3HrVYNToVDow0Ag8Ab7yCzLurO+vv4d8NeuKxlFv1+i
+ Ca8CNLt6svnQMM//tk/tH7NpYULuIVsYAAAAAElFTkSuQmCC
