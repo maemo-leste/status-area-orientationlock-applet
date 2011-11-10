@@ -12,10 +12,10 @@ itlocaledir = $(prefix)/$(DATADIRNAME)/locale
 INSTALL = /scratchbox/tools/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 
-GMSGFMT = /scratchbox/tools/bin/msgfmt
-MSGFMT = /scratchbox/tools/bin/msgfmt
-XGETTEXT = /scratchbox/tools/bin/xgettext
-MSGMERGE = /scratchbox/tools/bin/msgmerge 
+GMSGFMT = /usr/bin/msgfmt
+MSGFMT = /usr/bin/msgfmt
+XGETTEXT = /usr/bin/xgettext
+MSGMERGE = /usr/bin/msgmerge 
 
 PO_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR
 
