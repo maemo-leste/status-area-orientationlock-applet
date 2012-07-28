@@ -1,0 +1,31 @@
+# .pot file for orientation lock applet.
+# Copyright (C) 2011
+# This file is distributed under the same license as the status-area-orientationlock-applet package.
+# Arno Dekker <adekker@gmail.com>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: status-area-orientationlock-applet 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-11 19:29+0200\n"
+"PO-Revision-Date: 2011-03-11 19:36+0200\n"
+"Last-Translator:  <adekker@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Dutch\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+ 
+#: ../src/lib-orientation-lock-status-menu-widget.c:64
+#: ../src/lib-orientation-lock-status-menu-widget.c:95
+msgid "Landscape orientation locked"
+msgstr "Landschap oriëntatie aan"
+ 
+#: ../src/lib-orientation-lock-status-menu-widget.c:73
+#: ../src/lib-orientation-lock-status-menu-widget.c:106
+msgid "Auto-orientation enabled"
+msgstr "Auto-oriëntatie aan"
+ 
+#: ../src/lib-orientation-lock-status-menu-widget.c:110
+msgid "Orientation lock"
+msgstr "Oriëntatie mode"
