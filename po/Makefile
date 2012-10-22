@@ -12,14 +12,14 @@ itlocaledir = $(prefix)/$(DATADIRNAME)/locale
 INSTALL = /scratchbox/tools/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 
-GMSGFMT = /scratchbox/tools/bin/msgfmt
-MSGFMT = /scratchbox/tools/bin/msgfmt
-XGETTEXT = /scratchbox/tools/bin/xgettext
-MSGMERGE = /scratchbox/tools/bin/msgmerge 
+GMSGFMT = msgfmt
+MSGFMT = msgfmt
+XGETTEXT = xgettext
+MSGMERGE = msgmerge 
 
-PO_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR
+PO_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR nl_NL
 
-USE_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR
+USE_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR nl_NL
 
 POFILES=$(shell LINGUAS="$(PO_LINGUAS)"; for lang in $$LINGUAS; do printf "$$lang.po "; done)
 
