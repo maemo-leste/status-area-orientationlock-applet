@@ -19,12 +19,12 @@ msgstr ""
 #: ../src/lib-orientation-lock-status-menu-widget.c:64
 #: ../src/lib-orientation-lock-status-menu-widget.c:95
 msgid "Enabled"
-msgstr "Landscape orientation locked"
+msgstr "Enabled"
 
 #: ../src/lib-orientation-lock-status-menu-widget.c:73
 #: ../src/lib-orientation-lock-status-menu-widget.c:106
 msgid "Disabled"
-msgstr "Auto-orientation enabled"
+msgstr "Disabled"
 
 #: ../src/lib-orientation-lock-status-menu-widget.c:110
 msgid "Orientation lock"
