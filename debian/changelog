@@ -17,6 +17,13 @@ status-area-orientationlock-applet (1.0+0cssu4) unstable; urgency=low
 
  -- Christian Ratzenhofer <christian_ratzenhofer@yahoo.de>  Mon, 22 Oct 2012 18:57:53 +0200
 
+status-area-orientationlock-applet (1.0+0cssu3.1) unstable; urgency=low
+
+  * Changed section to user/desktop (in order to make package optional).
+  * Fixed depends and Makefile to facilitate gettext properly.
+
+ -- Christian Ratzenhofer <christian_ratzenhofer@yahoo.de>  Thu, 10 Nov 2011 01:31:56 +0100
+
 status-area-orientationlock-applet (1.0+0cssu3) unstable; urgency=low
 
   * Updated Polish translation and added French (by mirandir).
