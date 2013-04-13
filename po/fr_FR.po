@@ -21,7 +21,7 @@ msgstr ""
 #: ../src/lib-orientation-lock-status-menu-widget.c:64
 #: ../src/lib-orientation-lock-status-menu-widget.c:95
 msgid "Enabled"
-msgstr "Paysage seulement"
+msgstr "Verrouillée"
 
 #: ../src/lib-orientation-lock-status-menu-widget.c:73
 #: ../src/lib-orientation-lock-status-menu-widget.c:106
