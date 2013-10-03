@@ -17,9 +17,9 @@ MSGFMT = msgfmt
 XGETTEXT = xgettext
 MSGMERGE = msgmerge 
 
-PO_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR nl_NL
+PO_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR nl_NL sv_SE
 
-USE_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR nl_NL
+USE_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR nl_NL sv_SE
 
 POFILES=$(shell LINGUAS="$(PO_LINGUAS)"; for lang in $$LINGUAS; do printf "$$lang.po "; done)
 
