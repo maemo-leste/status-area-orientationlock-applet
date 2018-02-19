@@ -2,7 +2,8 @@ Source: status-area-orientationlock-applet
 Section: user/desktop
 Priority: optional
 Maintainer: Mohammad Abu-Garbeyyeh <mohammad7410@gmail.com>
-Build-Depends: debhelper (>= 5), libgtk2.0-dev, libglib2.0-dev, libhildon1-dev, libhildondesktop1-dev, gettext
+Build-Depends: debhelper (>= 5), libgtk2.0-dev, libglib2.0-dev, libhildon1-dev, libhildondesktop1-dev, gettext, libdbus-glib-1-dev, libgconf2-dev
+
 
 Package: status-area-orientationlock-applet
 Architecture: any

@@ -1,7 +1,7 @@
 OBJS=lib-orientation-lock-status-menu-widget.o
 SOURCES=lib-orientation-lock-status-menu-widget.c
 LIB=lib-orientationlock-status-menu.so
-PKG_FLAGS=$(shell pkg-config hildon-1 libhildondesktop-1 --libs --cflags)
+PKG_FLAGS=$(shell pkg-config hildon-1 libhildondesktop-1 gconf-2.0 dbus-1 --libs --cflags)
 CCFLAGS=-shared
 CC=gcc
 
