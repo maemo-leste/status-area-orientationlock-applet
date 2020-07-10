@@ -7,7 +7,7 @@ prefix = /usr
 DATADIRNAME = share
 itlocaledir = $(prefix)/$(DATADIRNAME)/locale
 
-INSTALL = /scratchbox/tools/bin/install -c
+INSTALL = install -c
 INSTALL_DATA = ${INSTALL} -m 644
 
 GMSGFMT = msgfmt

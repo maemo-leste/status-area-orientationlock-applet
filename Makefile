@@ -1,5 +1,4 @@
-SUBDIRS=src po
-BUILDDIR=build
+SUBDIRS = src po data
 
 all: subdirs
 
@@ -8,10 +7,10 @@ subdirs: $(SUBDIRS)
 $(SUBDIRS):
 	$(MAKE) -C $@
 
-.PHONY: all clean install $(SUBDIRS)
-
 clean:
-	for d in $(SUBDIRS); do (cd $$d; $(MAKE) clean); done
+	for d in $(SUBDIRS); do $(MAKE) -C $$d clean; done
 
 install:
-	for d in $(SUBDIRS); do (cd $$d; $(MAKE) install); done
+	for d in $(SUBDIRS); do $(MAKE) -C $$d install; done
+
+.PHONY: all clean install $(SUBDIRS)
