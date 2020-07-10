@@ -1,5 +1,0 @@
-data/orientation-lock-icon.auto.png		usr/share/icons/hicolor/48x48/hildon
-data/orientation-lock-icon.landscape.png	usr/share/icons/hicolor/48x48/hildon
-data/orientation-lock.landscape.png		usr/share/icons/hicolor/18x18/hildon
-src/lib-orientationlock-status-menu.so		usr/lib/hildon-desktop
-data/status-area-orientationlock-applet.desktop	usr/share/applications/hildon-status-menu
