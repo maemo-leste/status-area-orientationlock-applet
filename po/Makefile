@@ -1,5 +1,3 @@
-
-
 GETTEXT_PACKAGE = status-area-orientationlock-applet
 PACKAGE = status-area-orientationlock-applet
 
@@ -15,7 +13,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 GMSGFMT = msgfmt
 MSGFMT = msgfmt
 XGETTEXT = xgettext
-MSGMERGE = msgmerge 
+MSGMERGE = msgmerge
 
 PO_LINGUAS= de_DE en_GB en_US pl_PL fi_FI fr_FR nl_NL sv_SE
 
@@ -33,7 +31,7 @@ POTFILES = \
 CATALOGS=$(shell LINGUAS="$(USE_LINGUAS)"; for lang in $$LINGUAS; do printf "$$lang.gmo "; done)
 
 .SUFFIXES:
-.SUFFIXES: .po .gmo .mo 
+.SUFFIXES: .po .gmo .mo
 
 .po.mo:
 	$(MSGFMT) -o $@ $<
@@ -47,7 +45,7 @@ all: compile
 compile: $(CATALOGS)
 
 $(GETTEXT_PACKAGE).pot: $(POTFILES)
-	$(XGETTEXT) --package-name=$(PACKAGE) -o $(GETTEXT_PACKAGE).pot $(POTFILES) 
+	$(XGETTEXT) --package-name=$(PACKAGE) -o $(GETTEXT_PACKAGE).pot $(POTFILES)
 
 install: all
 	linguas="$(USE_LINGUAS)"; \
@@ -60,10 +58,10 @@ install: all
 	  fi; \
 	done
 
-clean: 	
+clean:
 	rm -f *.mo *.gmo
 
-update-po: 
+update-po:
 	$(MAKE) $(GETTEXT_PACKAGE).pot
 	linguas="$(USE_LINGUAS)"; \
 	for lang in $$linguas; do \
@@ -74,4 +72,3 @@ update-po:
 	    cp $(GETTEXT_PACKAGE).pot $$lang.po; \
 	  fi; \
 	done
-
